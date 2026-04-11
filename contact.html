@@ -6,6 +6,63 @@
   <title>Contact — Abigail Nwakanma</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* additional inline styles for icon grid (non-list) */
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin: 32px 0;
+    }
+    .social-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform 0.2s;
+      width: 80px;
+    }
+    .social-icon:hover {
+      transform: translateY(-4px);
+    }
+    .social-icon .icon-circle {
+      width: 60px;
+      height: 60px;
+      background: var(--warm-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      border: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .social-icon:hover .icon-circle {
+      background: var(--accent-pale);
+      border-color: var(--accent);
+    }
+    .social-icon span:last-child {
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+    }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,53 +91,62 @@
   <a href="contact.html" onclick="toggleMenu()">Contact</a>
 </div>
 
-<section class="section" style="padding-top: 120px;">
-  <div class="container contact-container" style="max-width: 700px;">
+<section class="section" style="padding-top: 120px; text-align: center;">
+  <div class="container" style="max-width: 800px;">
     <div class="section-label">Get in Touch</div>
     <h1 class="section-title">Let's Connect</h1>
-    <p class="contact-intro" style="color: var(--ink-soft);">
-      I welcome conversations about research collaborations, speaking engagements, legal or UX consulting, writing opportunities, or simply exchanging book recommendations.
+    
+    <p style="font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 32px;">
+      I'm excited to hear from you — whether it's a research idea, a collaboration opportunity, 
+      a speaking invitation, or just a coffee chat and book recommendations. Don't be shy!
     </p>
 
-    <div class="contact-links" style="margin-bottom: 32px;">
-      <a href="mailto:abigailnwakanma5@gmail.com" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">✉</span>
-        <span>abigailnwakanma5@gmail.com</span>
-      </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">in</span>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px;">
+      <a href="mailto:abigailnwakanma5@gmail.com" class="btn-primary btn-large">📧 Send an email</a>
+      <a href="#" class="btn-secondary btn-large" id="scheduleBtn">📅 Schedule a meeting</a>
+    </div>
+
+    <div class="social-grid">
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">in</div>
         <span>LinkedIn</span>
       </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">M</span>
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">M</div>
         <span>Medium</span>
       </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">Be</span>
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">Be</div>
         <span>Behance</span>
       </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">🎓</span>
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">🎓</div>
         <span>Google Scholar</span>
       </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">SSRN</span>
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">SSRN</div>
         <span>SSRN</span>
       </a>
-      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
-        <span class="contact-icon" style="border-color: var(--border);">UTS</span>
+      <a href="#" target="_blank" class="social-icon">
+        <div class="icon-circle">UTS</div>
         <span>UTS Discovery</span>
       </a>
     </div>
 
-    <div class="contact-location" style="border-top-color: var(--border); color: var(--ink-muted);">
-      <p>📍 Based in <strong>Sydney, Australia</strong><br>Doctoral Researcher · University of Technology Sydney · Faculty of Law</p>
-    </div>
+    <a href="index.html" class="back-link">← Back to home</a>
   </div>
 </section>
 
 <footer><p>© 2026 Abigail Nwakanma · All rights reserved</p></footer>
 
 <script src="script.js"></script>
+<script>
+  // Placeholder for scheduling – replace with your Calendly link
+  document.getElementById('scheduleBtn')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('You can add your Calendly link here. Replace the # in the href with your actual scheduling URL.');
+    // window.open('https://calendly.com/your-link', '_blank');
+  });
+</script>
 </body>
 </html>
