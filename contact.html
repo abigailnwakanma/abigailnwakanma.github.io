@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Abigail Nwakanma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">AN</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="interests.html">Interests</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle"><span class="theme-icon" id="themeIcon">🌙</span></button>
+    <button class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">About</a>
+  <a href="research.html" onclick="toggleMenu()">Research</a>
+  <a href="projects.html" onclick="toggleMenu()">Projects</a>
+  <a href="interests.html" onclick="toggleMenu()">Interests</a>
+  <a href="cv.html" onclick="toggleMenu()">CV</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
+
+<section class="section" style="padding-top: 120px;">
+  <div class="container contact-container" style="max-width: 700px;">
+    <div class="section-label">Get in Touch</div>
+    <h1 class="section-title">Let's Connect</h1>
+    <p class="contact-intro" style="color: var(--ink-soft);">
+      I welcome conversations about research collaborations, speaking engagements, legal or UX consulting, writing opportunities, or simply exchanging book recommendations.
+    </p>
+
+    <div class="contact-links" style="margin-bottom: 32px;">
+      <a href="mailto:abigailnwakanma5@gmail.com" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">✉</span>
+        <span>abigailnwakanma5@gmail.com</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">in</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">M</span>
+        <span>Medium</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">Be</span>
+        <span>Behance</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">🎓</span>
+        <span>Google Scholar</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">SSRN</span>
+        <span>SSRN</span>
+      </a>
+      <a href="#" target="_blank" class="contact-item" style="color: var(--ink);">
+        <span class="contact-icon" style="border-color: var(--border);">UTS</span>
+        <span>UTS Discovery</span>
+      </a>
+    </div>
+
+    <div class="contact-location" style="border-top-color: var(--border); color: var(--ink-muted);">
+      <p>📍 Based in <strong>Sydney, Australia</strong><br>Doctoral Researcher · University of Technology Sydney · Faculty of Law</p>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Abigail Nwakanma · All rights reserved</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
