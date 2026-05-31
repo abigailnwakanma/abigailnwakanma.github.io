@@ -12,7 +12,7 @@
 <nav id="navbar">
   <a href="index.html" class="nav-logo">AN</a>
   <ul class="nav-links">
-    <li><a href="index.html">About</a></li>
+    <li><a href="index.html#about">About</a></li>
     <li><a href="research.html">Research</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="interests.html">Interests</a></li>
@@ -26,7 +26,7 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="toggleMenu()">About</a>
+  <a href="index.html#about" onclick="toggleMenu()">About</a>
   <a href="research.html" onclick="toggleMenu()">Research</a>
   <a href="projects.html" onclick="toggleMenu()">Projects</a>
   <a href="interests.html" onclick="toggleMenu()">Interests</a>
@@ -45,32 +45,50 @@
 
     <div class="interests-grid" style="margin-top: 48px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#8B6B4A,#5C4230);"><span class="interest-emoji">🎵</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#8B6B4A,#5C4230);">
+            <img src="images/music.jpg" alt="Music" onerror="this.style.display='none'" />
+            <span class="interest-emoji">🎵</span>
+          </div>
         <span class="interest-label">Music</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">From classical to Afrobeat — music is my constant companion.</p>
       </div>
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#4A7C6B,#2D5548);"><span class="interest-emoji">🎨</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#4A7C6B,#2D5548);">
+            <img src="images/design.jpg" alt="Design" onerror="this.style.display='none'" />
+            <span class="interest-emoji">🎨</span>
+          </div>
         <span class="interest-label">Design</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">UI/UX, visual storytelling, and making information beautiful.</p>
       </div>
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#C4562A,#8C3A1A);"><span class="interest-emoji">📚</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#C4562A,#8C3A1A);">
+            <img src="images/reading.jpg" alt="Reading and Writing" onerror="this.style.display='none'" />
+            <span class="interest-emoji">📚</span>
+          </div>
         <span class="interest-label">Reading & Writing</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">Fiction, essays, legal theory — and writing my own book.</p>
       </div>
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#5A6B8A,#364257);"><span class="interest-emoji">✈️📸</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#5A6B8A,#364257);">
+            <img src="images/travel.jpg" alt="Travel and Photography" onerror="this.style.display='none'" />
+            <span class="interest-emoji">✈️📸</span>
+          </div>
         <span class="interest-label">Travel & Photography</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">Capturing light, culture, and stories from everywhere I go.</p>
       </div>
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#7A8A4A,#4E5A2D);"><span class="interest-emoji">✨✈️</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#7A8A4A,#4E5A2D);">
+            <img src="images/stargazing.jpg" alt="Stargazing and Plane Spotting" onerror="this.style.display='none'" />
+            <span class="interest-emoji">✨✈️</span>
+          </div>
         <span class="interest-label">Stargazing & Plane Spotting</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">Looking up — at the night sky or arriving aircraft — brings me peace.</p>
       </div>
       <div class="interest-card">
-        <div class="interest-img" style="background: linear-gradient(145deg,#8A5A6B,#5A3A48);"><span class="interest-emoji">☕🌿</span></div>
+        <div class="interest-img" style="background: linear-gradient(145deg,#8A5A6B,#5A3A48);">
+            <img src="images/cozy.jpg" alt="Cosy Corners and Outdoors" onerror="this.style.display='none'" />
+            <span class="interest-emoji">☕🌿</span>
+          </div>
         <span class="interest-label">Cosy Corners & Outdoors</span>
         <p class="interest-desc" style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 8px;">I need both: a quiet nook with tea, and long walks under open skies.</p>
       </div>
